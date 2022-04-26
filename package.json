@@ -1,0 +1,19 @@
+{
+  "name": "angularjs-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "fancn21th <fancn21th@aliyun.com> (http://fancn21th.cn/)",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "4.17.21"
+  },
+  "devDependencies": {
+    "webpack": "5.72.0",
+    "webpack-cli": "4.9.2"
+  }
+}
