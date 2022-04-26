@@ -2,16 +2,23 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  target: ["web", "es5"],
+  mode: "development",
+  target: ["web", "es5"], // 这项配置用于支持ES环境
   entry: {
     index: "./src/index.js",
     print: "./src/print.js",
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: "管理输出",
+      title: "Angular 1.2",
     }),
   ],
+  devServer: {
+    static: "./dist",
+  },
+  optimization: {
+    runtimeChunk: "single",
+  },
   output: {
     filename: "[name].bundle.js",
     path: path.resolve(__dirname, "dist"),
