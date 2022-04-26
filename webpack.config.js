@@ -6,7 +6,6 @@ module.exports = {
   target: ["web", "es5"], // 这项配置用于支持ES环境
   entry: {
     index: "./src/index.js",
-    print: "./src/print.js",
   },
   plugins: [
     new HtmlWebpackPlugin({
