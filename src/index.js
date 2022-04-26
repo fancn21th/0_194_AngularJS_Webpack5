@@ -1,4 +1,3 @@
-import "@babel/polyfill";
 import angular from "angular";
 import hello from "./components/hello";
 
