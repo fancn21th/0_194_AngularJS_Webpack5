@@ -7,9 +7,12 @@ module.exports = {
   entry: {
     index: "./src/index.js",
   },
+  devtool: "inline-source-map",
   plugins: [
     new HtmlWebpackPlugin({
-      title: "Angular 1.2",
+      filename: "index.html",
+      template: "src/index.html",
+      inject: "body",
     }),
   ],
   devServer: {
@@ -25,6 +28,10 @@ module.exports = {
   },
   module: {
     rules: [
+      {
+        test: /\.html$/i,
+        loader: "html-loader",
+      },
       {
         test: /\.m?js$/,
         exclude: /(node_modules|bower_components)/,
