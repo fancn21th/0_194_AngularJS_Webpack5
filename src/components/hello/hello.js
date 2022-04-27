@@ -1,4 +1,5 @@
 import template from "./hello.html";
+import "./hello.css";
 
 export default function (ngModule) {
   ngModule.directive("hello", function () {
